@@ -1,0 +1,249 @@
+unit_number,true_RUL,health_stage
+1,22,Critical degradation
+2,39,Critical degradation
+3,107,Early degradation
+4,75,Moderate degradation
+5,149,Healthy
+6,78,Moderate degradation
+7,94,Early degradation
+8,14,Critical degradation
+9,99,Early degradation
+10,162,Healthy
+11,143,Healthy
+12,7,Near failure
+13,71,Moderate degradation
+14,105,Early degradation
+15,12,Critical degradation
+16,160,Healthy
+17,162,Healthy
+18,104,Early degradation
+19,194,Healthy
+20,82,Early degradation
+21,91,Early degradation
+22,11,Critical degradation
+23,26,Critical degradation
+24,142,Healthy
+25,39,Critical degradation
+26,92,Early degradation
+27,76,Moderate degradation
+28,124,Early degradation
+29,64,Moderate degradation
+30,118,Early degradation
+31,6,Near failure
+32,22,Critical degradation
+33,147,Healthy
+34,126,Healthy
+35,36,Critical degradation
+36,73,Moderate degradation
+37,89,Early degradation
+38,11,Critical degradation
+39,151,Healthy
+40,10,Near failure
+41,97,Early degradation
+42,30,Critical degradation
+43,42,Moderate degradation
+44,60,Moderate degradation
+45,85,Early degradation
+46,134,Healthy
+47,34,Critical degradation
+48,45,Moderate degradation
+49,24,Critical degradation
+50,86,Early degradation
+51,119,Early degradation
+52,151,Healthy
+53,142,Healthy
+54,176,Healthy
+55,157,Healthy
+56,67,Moderate degradation
+57,97,Early degradation
+58,8,Near failure
+59,154,Healthy
+60,139,Healthy
+61,51,Moderate degradation
+62,33,Critical degradation
+63,184,Healthy
+64,46,Moderate degradation
+65,12,Critical degradation
+66,133,Healthy
+67,46,Moderate degradation
+68,46,Moderate degradation
+69,12,Critical degradation
+70,33,Critical degradation
+71,15,Critical degradation
+72,176,Healthy
+73,23,Critical degradation
+74,89,Early degradation
+75,124,Early degradation
+76,163,Healthy
+77,25,Critical degradation
+78,74,Moderate degradation
+79,78,Moderate degradation
+80,114,Early degradation
+81,96,Early degradation
+82,10,Near failure
+83,172,Healthy
+84,166,Healthy
+85,115,Early degradation
+86,70,Moderate degradation
+87,94,Early degradation
+88,56,Moderate degradation
+89,86,Early degradation
+90,96,Early degradation
+91,50,Moderate degradation
+92,73,Moderate degradation
+93,154,Healthy
+94,129,Healthy
+95,171,Healthy
+96,71,Moderate degradation
+97,105,Early degradation
+98,113,Early degradation
+99,37,Critical degradation
+100,7,Near failure
+101,13,Critical degradation
+102,22,Critical degradation
+103,9,Near failure
+104,120,Early degradation
+105,100,Early degradation
+106,107,Early degradation
+107,41,Moderate degradation
+108,153,Healthy
+109,126,Healthy
+110,59,Moderate degradation
+111,18,Critical degradation
+112,66,Moderate degradation
+113,13,Critical degradation
+114,14,Critical degradation
+115,139,Healthy
+116,13,Critical degradation
+117,75,Moderate degradation
+118,8,Near failure
+119,109,Early degradation
+120,137,Healthy
+121,41,Moderate degradation
+122,192,Healthy
+123,23,Critical degradation
+124,86,Early degradation
+125,184,Healthy
+126,15,Critical degradation
+127,195,Healthy
+128,126,Healthy
+129,120,Early degradation
+130,165,Healthy
+131,101,Early degradation
+132,116,Early degradation
+133,126,Healthy
+134,36,Critical degradation
+135,7,Near failure
+136,122,Early degradation
+137,159,Healthy
+138,88,Early degradation
+139,173,Healthy
+140,146,Healthy
+141,130,Healthy
+142,108,Early degradation
+143,53,Moderate degradation
+144,162,Healthy
+145,59,Moderate degradation
+146,100,Early degradation
+147,56,Moderate degradation
+148,145,Healthy
+149,76,Moderate degradation
+150,57,Moderate degradation
+151,31,Critical degradation
+152,88,Early degradation
+153,173,Healthy
+154,34,Critical degradation
+155,7,Near failure
+156,133,Healthy
+157,172,Healthy
+158,6,Near failure
+159,22,Critical degradation
+160,83,Early degradation
+161,82,Early degradation
+162,84,Early degradation
+163,95,Early degradation
+164,174,Healthy
+165,111,Early degradation
+166,72,Moderate degradation
+167,109,Early degradation
+168,87,Early degradation
+169,179,Healthy
+170,158,Healthy
+171,126,Healthy
+172,12,Critical degradation
+173,8,Near failure
+174,10,Near failure
+175,123,Early degradation
+176,103,Early degradation
+177,12,Critical degradation
+178,106,Early degradation
+179,12,Critical degradation
+180,32,Critical degradation
+181,37,Critical degradation
+182,116,Early degradation
+183,15,Critical degradation
+184,10,Near failure
+185,46,Moderate degradation
+186,142,Healthy
+187,24,Critical degradation
+188,135,Healthy
+189,56,Moderate degradation
+190,43,Moderate degradation
+191,178,Healthy
+192,71,Moderate degradation
+193,104,Early degradation
+194,15,Critical degradation
+195,166,Healthy
+196,89,Early degradation
+197,36,Critical degradation
+198,11,Critical degradation
+199,92,Early degradation
+200,96,Early degradation
+201,59,Moderate degradation
+202,13,Critical degradation
+203,167,Healthy
+204,151,Healthy
+205,154,Healthy
+206,109,Early degradation
+207,116,Early degradation
+208,91,Early degradation
+209,11,Critical degradation
+210,88,Early degradation
+211,108,Early degradation
+212,76,Moderate degradation
+213,14,Critical degradation
+214,89,Early degradation
+215,145,Healthy
+216,17,Critical degradation
+217,66,Moderate degradation
+218,154,Healthy
+219,41,Moderate degradation
+220,182,Healthy
+221,73,Moderate degradation
+222,39,Critical degradation
+223,58,Moderate degradation
+224,14,Critical degradation
+225,145,Healthy
+226,88,Early degradation
+227,162,Healthy
+228,189,Healthy
+229,120,Early degradation
+230,98,Early degradation
+231,33,Critical degradation
+232,184,Healthy
+233,110,Early degradation
+234,68,Moderate degradation
+235,24,Critical degradation
+236,75,Moderate degradation
+237,18,Critical degradation
+238,16,Critical degradation
+239,166,Healthy
+240,98,Early degradation
+241,176,Healthy
+242,81,Early degradation
+243,118,Early degradation
+244,35,Critical degradation
+245,131,Healthy
+246,194,Healthy
+247,112,Early degradation
+248,26,Critical degradation
