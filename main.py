@@ -53,3 +53,38 @@ if df is not None:
         print(f"Column Validation: MISMATCH\n - Missing: {missing_cols}\n - Extra: {extra_cols}")
 
 # ==========================================
+# # C) Data Audit
+# ==========================================
+def perform_audit(df):
+    if df is None: return
+    print("\n--- Dataset Overview ---")
+    print(f"Shape: {df.shape}")
+    print(f"Duplicates: {df.duplicated().sum()}")
+    print("\n--- Null & Type Audit ---")
+    audit_df = pd.DataFrame({
+        'Dtype': df.dtypes,
+        'Nulls': df.isnull().sum(),
+        'Null%': (df.isnull().sum() / len(df) * 100).round(2),
+        'Unique': df.nunique()
+    })
+    print(audit_df)
+    
+    # Numeric Stability
+    num_cols = df.select_dtypes(include=[np.number]).columns
+    if not num_cols.empty:
+        print("\n--- Numeric Stability ---")
+        for col in num_cols:
+            inf_count = np.isinf(df[col]).sum()
+            if inf_count > 0: print(f"Warning: {col} contains {inf_count} inf values.")
+            if df[col].std() < 1e-6: print(f"Warning: {col} has near-zero variance.")
+
+def detect_date_cols(df):
+    candidates = []
+    for col in df.select_dtypes(include=['object']).columns:
+        try:
+            # Sample check to avoid heavy processing
+            sample = df[col].dropna().head(5).astype(str)
+            if any(sample.str.contains(r'\d{2,4}[-/]\d{1,2}[-/]\d{1,2}')):
+                candidates.append(col)
+        except: continue
+    return candidates
