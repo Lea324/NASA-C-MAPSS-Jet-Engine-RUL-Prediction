@@ -6,8 +6,9 @@ for dirname, _, filenames in os.walk(r'C:\Jet machine learning'):
             DATA_DIR = os.path.join(dirname, filename)
             print(DATA_DIR)
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import warnings
+import numpy as np #NumPy (numerical computing)
+import pandas as pd #Pandas (data processing)
+import matplotlib.pyplot as plt #Matplotlib (graphs and visualization)
+import scipy #SciPy (engineering calculations)
+import seaborn as sns #Seaborn (statistical data visualization)
+import warnings #Warnings (to manage warning messages)
