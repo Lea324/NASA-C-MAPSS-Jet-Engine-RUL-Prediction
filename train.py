@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # Load the training data
-df = pd.read_csv('C:\\Jet machine learning\\Aircraft Engine Dataset\\FD001\\train.csv')
+df = pd.read_csv('C:\\Engine URL Prediction\\Aircraft Engine Dataset\\FD001\\train.csv')
 # Preprocess the data
 # Checking the missing values
 #missing_values = df.isnull().sum()
@@ -26,7 +26,7 @@ start_time = time.time()
 # Implementing the linear regression model
 model = LinearRegression()
 model.fit(X, Y) #the training step
-df_test = pd.read_csv('C:\\Jet machine learning\\Aircraft Engine Dataset\\FD001\\test.csv')
+df_test = pd.read_csv('C:\\Engine URL Prediction\\Aircraft Engine Dataset\\FD001\\test.csv')
 df_test_last = df_test.loc[
     df_test.groupby('unit_number')['time_in_cycles'].idxmax()
 ] #only keep the last cycle of each unit_number
@@ -35,7 +35,7 @@ Y_pred = model.predict(X_test)
 end_time = time.time()
 
 #obtain the true RUL values from the RUL_targets.csv file
-df_target = pd.read_csv('C:\\Jet machine learning\\Aircraft Engine Dataset\\FD001\\RUL_targets.csv')
+df_target = pd.read_csv('C:\\Engine URL Prediction\\Aircraft Engine Dataset\\FD001\\RUL_targets.csv')
 Y_test = df_target['true_RUL'].astype(float).to_numpy()
 #print("X_test shape:", X_test.shape)
 #print("Y_pred shape:", Y_pred.shape)
@@ -49,3 +49,7 @@ print("MAE:", format(mae, ".4g"))
 print("RMSE:", format(rmse, ".4g"))
 print("R²:", format(r2, ".4g"))
 print(f"Computational Time: {format(end_time - start_time, '.4g')} seconds")
+#MAE: 26.12
+#RMSE: 31.74
+#R²: 0.4166
+#Computational Time: 0.198 seconds
