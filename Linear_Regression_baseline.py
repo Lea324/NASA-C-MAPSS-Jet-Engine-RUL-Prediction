@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import matplotlib.pyplot as plt
+
 # Load the training data
 df = pd.read_csv('C:\\Engine URL Prediction\\Aircraft Engine Dataset\\FD001\\train.csv')
 # Preprocess the data
@@ -26,13 +28,13 @@ start_time = time.time()
 # Implementing the linear regression model
 model = LinearRegression()
 model.fit(X, Y) #the training step
+end_time = time.time()
 df_test = pd.read_csv('C:\\Engine URL Prediction\\Aircraft Engine Dataset\\FD001\\test.csv')
 df_test_last = df_test.loc[
     df_test.groupby('unit_number')['time_in_cycles'].idxmax()
 ] #only keep the last cycle of each unit_number
 X_test = df_test_last[X.columns]
 Y_pred = model.predict(X_test)
-end_time = time.time()
 
 #obtain the true RUL values from the RUL_targets.csv file
 df_target = pd.read_csv('C:\\Engine URL Prediction\\Aircraft Engine Dataset\\FD001\\RUL_targets.csv')
@@ -53,3 +55,20 @@ print(f"Computational Time: {format(end_time - start_time, '.4g')} seconds")
 #RMSE: 31.74
 #R²: 0.4166
 #Computational Time: 0.198 seconds
+#=====================Visualization of the results=========================
+plt.figure(figsize=(10, 6))
+plt.plot(range(len(Y_test)), Y_test, color='blue', label='True RUL')
+plt.plot(range(len(Y_pred)), Y_pred, color='red', label='Predicted RUL')
+plt.title('True vs Predicted RUL')
+plt.xlabel('Unit Number')
+plt.ylabel('RUL')
+plt.legend()
+plt.show()
+#new plot to visualize the error distribution
+errors = Y_test - Y_pred
+plt.figure(figsize=(10, 6))
+plt.plot(range(len(errors)), errors, color='purple', alpha=0.7)
+plt.title('Error Distribution')
+plt.xlabel('Unit Number')
+plt.ylabel('Error')
+plt.show()
