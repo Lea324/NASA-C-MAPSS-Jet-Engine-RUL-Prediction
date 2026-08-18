@@ -5,17 +5,6 @@ from sklearn.model_selection import GroupKFold
 from sklearn.model_selection import RandomizedSearchCV #this is for hyperparameter tuning
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import time
-from tqdm import tqdm
-from joblib import Parallel
-#monitor the progress of the hyperparameter tuning
-class TqdmJoblib(tqdm):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-    def __call__(self, *args, **kwargs):
-        return super().__call__(*args, **kwargs)
-
-
 #import the dataset
 df = pd.read_csv("C:\\Engine URL Prediction\\Aircraft Engine Dataset\\FD001\\train.csv")
 # Alreaady preprocessed the data in Linear_Regression_baseline.py, so we can directly use it here
@@ -80,32 +69,6 @@ y_pred = model.predict(X_test)
 
 predict_end_time = time.time()
 prediction_time = predict_end_time - predict_begin_time
-total_fits = 50 * 5
-# Store original Parallel method
-original_call = Parallel.__call__
-
-
-def patched_call(self, iterable):
-    """
-    Patch Joblib so tqdm updates whenever a CV fit finishes.
-    """
-
-    progress_bar = tqdm(
-        total=total_fits,
-        desc="Random Search",
-        unit="fit",
-        dynamic_ncols=True
-    )
-
-    # Save original callback
-    original_callback = self._backend.compute_batch
-
-    result = original_call(self, iterable)
-
-    progress_bar.update(total_fits)
-    progress_bar.close()
-
-    return result
 
 # Calculate metrics
 mae = mean_absolute_error(y_test, y_pred)
