@@ -1,0 +1,226 @@
+n_inter 200 :
+===== Model Performance =====
+Predict MAE: 19.0148
+Training MAE: 21.9799
+RMSE: 25.3705
+R²: 0.6273
+
+===== Time =====
+Training/Tuning Time: 514.8671 seconds
+Prediction Time: 0.0088 seconds
+
+===== Best Hyperparameters =====
+subsample: 0.8
+reg_lambda: 20
+reg_alpha: 0.1
+n_estimators: 500
+min_child_weight: 15
+max_depth: 3
+max_delta_step: 0
+learning_rate: 0.01
+gamma: 0.5
+colsample_bytree: 0.5
+
+===== Best CV Performance =====
+Best CV MAE: 26.3013
+
+
+updated : 3 1
+===== Model Performance =====
+Predict MAE: 16.8838
+Training MAE: 22.5314
+RMSE: 22.6737
+R²: 0.7023
+
+===== Time =====
+Training/Tuning Time: 674.8346 seconds
+Prediction Time: 0.0100 seconds
+
+===== Best Hyperparameters =====
+subsample: 0.8
+reg_lambda: 20
+reg_alpha: 0.1
+n_estimators: 500
+min_child_weight: 15
+max_depth: 3
+max_delta_step: 0
+learning_rate: 0.01
+gamma: 0.5
+colsample_bytree: 0.5
+
+===== Best CV Performance =====
+Best CV MAE: 27.2052
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 53/100 (53.00%)
+Underestimation Count: 47/100 (47.00%)
+Mean Overestimation: 15.5220
+Mean Underestimation: 18.4193
+ (  over_penalty = 3
+    under_penalty = 1)
+
+
+
+new: 5 1 (best)
+===== Model Performance =====
+Predict MAE: 20.9319
+Training MAE: 17.2783
+RMSE: 27.2391
+R²: 0.5703
+
+===== Time =====
+Training/Tuning Time: 692.3693 seconds
+Prediction Time: 0.0120 seconds
+
+===== Best Hyperparameters =====
+subsample: 0.5
+reg_lambda: 10
+reg_alpha: 0.1
+n_estimators: 800
+min_child_weight: 1
+max_depth: 6
+max_delta_step: 5
+learning_rate: 0.05
+gamma: 0.2
+colsample_bytree: 0.8
+
+===== Best CV Performance =====
+Best CV MAE: 28.3316
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 44/100 (44.00%)
+Underestimation Count: 56/100 (56.00%)
+Mean Overestimation: 19.9243
+Mean Underestimation: 21.7236
+
+
+new new : 7 - no change
+===== Model Performance =====
+Predict MAE: 20.7321
+Training MAE: 17.7317
+RMSE: 27.0561
+R²: 0.5761
+
+===== Time =====
+Training/Tuning Time: 686.6641 seconds
+Prediction Time: 0.0116 seconds
+
+===== Best Hyperparameters =====
+subsample: 0.5
+reg_lambda: 10
+reg_alpha: 0.1
+n_estimators: 800
+min_child_weight: 1
+max_depth: 6
+max_delta_step: 5
+learning_rate: 0.05
+gamma: 0.2
+colsample_bytree: 0.8
+
+===== Best CV Performance =====
+Best CV MAE: 28.8258
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 42/100 (42.00%)
+Underestimation Count: 58/100 (58.00%)
+Mean Overestimation: 19.7609
+Mean Underestimation: 21.4354
+
+5 2
+===== Model Performance =====
+Predict MAE: 16.9234
+Training MAE: 22.1423
+RMSE: 22.7083
+R²: 0.7014
+
+===== Time =====
+Training/Tuning Time: 670.8408 seconds
+Prediction Time: 0.0117 seconds
+
+===== Best Hyperparameters =====
+subsample: 0.8
+reg_lambda: 20
+reg_alpha: 0.1
+n_estimators: 500
+min_child_weight: 15
+max_depth: 3
+max_delta_step: 0
+learning_rate: 0.01
+gamma: 0.5
+colsample_bytree: 0.5
+
+===== Best CV Performance =====
+Best CV MAE: 26.8291
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 51/100 (51.00%)
+Underestimation Count: 49/100 (49.00%)
+Mean Overestimation: 17.6764
+Mean Underestimation: 16.1398
+
+1:50 - not too bad but with too long train time
+===== Model Performance =====
+Predict MAE: 22.7976
+Training MAE: 17.1190
+RMSE: 29.9404
+R²: 0.4809
+
+===== Time =====
+Training/Tuning Time: 686.3327 seconds
+Prediction Time: 0.0129 seconds
+
+===== Best Hyperparameters =====
+subsample: 0.5
+reg_lambda: 20
+reg_alpha: 5
+n_estimators: 1000
+min_child_weight: 7
+max_depth: 6
+max_delta_step: 10
+learning_rate: 0.03
+gamma: 0.5
+colsample_bytree: 0.8
+
+===== Best CV Performance =====
+Best CV MAE: 30.8780
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 38/100 (38.00%)
+Underestimation Count: 62/100 (62.00%)
+Mean Overestimation: 20.4224
+Mean Underestimation: 24.2534
+
+
+
+1:100 - try to find the limit but there no improvement, and the train time is too long
+
+===== Model Performance =====
+Predict MAE: 23.1203
+Training MAE: 17.9471
+RMSE: 30.4902
+R²: 0.4617
+
+===== Time =====
+Training/Tuning Time: 679.5708 seconds
+Prediction Time: 0.0121 seconds
+
+===== Best Hyperparameters =====
+subsample: 0.8
+reg_lambda: 50
+reg_alpha: 1
+n_estimators: 1000
+min_child_weight: 3
+max_depth: 6
+max_delta_step: 5
+learning_rate: 0.05
+gamma: 0.2
+colsample_bytree: 1.0
+
+===== Best CV Performance =====
+Best CV MAE: 31.2146
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 36/100 (36.00%)
+Underestimation Count: 64/100 (64.00%)
+Mean Overestimation: 20.2286
+Mean Underestimation: 24.7468

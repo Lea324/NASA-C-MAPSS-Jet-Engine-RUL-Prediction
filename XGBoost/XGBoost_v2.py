@@ -25,18 +25,19 @@ model = XGBRegressor(
 )
 
 param_dist = {
-    "n_estimators": [100, 200, 300, 500, 800],
-    "max_depth": [2, 3, 4, 5, 6, 8, 10],
-    "learning_rate": [0.01, 0.03, 0.05, 0.1, 0.15, 0.2],
-    "subsample": [0.6, 0.7, 0.8, 0.9, 1.0],
+    "n_estimators": [100, 200, 300, 500, 800, 1000],
+    "max_depth": [2, 3, 4, 5, 6],
+    "learning_rate": [0.01, 0.03, 0.05, 0.1],
+    "subsample": [0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
     "colsample_bytree": [0.6, 0.7, 0.8, 0.9, 1.0],
-    "min_child_weight": [1, 3, 5, 7, 10],
-    "gamma": [0, 0.1, 0.2, 0.5, 1],
-    "reg_alpha": [0, 0.01, 0.1, 1],
-    "reg_lambda": [0.1, 0.5, 1, 5, 10]
+    "min_child_weight": [1, 3, 5, 7, 10, 15],
+    "gamma": [0.1, 0.2, 0.5, 1, 2],
+    "reg_alpha": [0.1, 0.5, 1, 5, 10],
+    "reg_lambda": [1, 5, 10, 20, 50],
+    "max_delta_step": [0, 1, 5, 10]
 }
 
-cv = GroupKFold(n_splits=5)
+cv = GroupKFold(n_splits=5) #what is this? 
 
 random_search = RandomizedSearchCV(
     estimator=model,
@@ -55,13 +56,13 @@ random_search.fit(
     groups=df["unit_number"]
 )
 
-train_end_time = time.time()
-training_time = train_end_time - train_begin_time
 
 # Get the best model
 model = random_search.best_estimator_
 
 
+train_end_time = time.time()
+training_time = train_end_time - train_begin_time
 # Prediction
 predict_begin_time = time.time()
 

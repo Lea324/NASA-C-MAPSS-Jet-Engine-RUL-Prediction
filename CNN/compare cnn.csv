@@ -1,0 +1,354 @@
+(5,1):
+===== Final training (GroupKFold ensemble) =====
+  fold 1/5: val MAE = 17.5671
+  fold 2/5: val MAE = 17.3006
+  fold 3/5: val MAE = 14.5563
+  fold 4/5: val MAE = 14.4811
+  fold 5/5: val MAE = 15.7023
+
+===== Model Performance =====
+Predict MAE: 15.2929
+Training MAE (in-sample): 6.5718
+OOF MAE (out-of-fold on train): 15.9215
+RMSE: 19.8802
+R²: 0.7711
+
+===== Time =====
+Training Time (5 folds): 231.5849 seconds
+Prediction Time: 0.0339 seconds
+
+===== Hyperparameters =====
+channels: (64, 128, 64)
+kernel_size: 3
+dropout: 0.3
+lr: 0.001
+batch_size: 256
+weight_decay: 0.0
+Fold val MAEs: [17.5671, 17.3006, 14.5563, 14.4811, 15.7023]
+Mean fold MAE: 15.9215
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 50/100 (50.00%)
+Underestimation Count: 50/100 (50.00%)
+Mean Overestimation: 14.0471
+Mean Underestimation: 16.5387
+
+
+(1,1):
+===== Final training (GroupKFold ensemble) =====
+  fold 1/5: val MAE = 14.8599
+  fold 2/5: val MAE = 14.9570
+  fold 3/5: val MAE = 14.8245
+  fold 4/5: val MAE = 13.6960
+  fold 5/5: val MAE = 14.8345
+
+===== Model Performance =====
+Predict MAE: 14.8889
+Training MAE (in-sample): 5.1268
+OOF MAE (out-of-fold on train): 14.6345
+RMSE: 19.6675
+R²: 0.7760
+
+===== Time =====
+Training Time (5 folds): 219.2784 seconds
+Prediction Time: 0.0323 seconds
+
+===== Hyperparameters =====
+channels: (64, 128, 64)
+kernel_size: 3
+dropout: 0.3
+lr: 0.001
+batch_size: 256
+weight_decay: 0.0
+Fold val MAEs: [14.8599, 14.957, 14.8245, 13.696, 14.8345]
+Mean fold MAE: 14.6344
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 59/100 (59.00%)
+Underestimation Count: 41/100 (41.00%)
+Mean Overestimation: 16.1767
+Mean Underestimation: 13.0356
+
+10 fold - not better too much
+===== Final training (GroupKFold ensemble) =====
+  fold 1/10: val MAE = 14.9788
+  fold 2/10: val MAE = 16.1484
+  fold 3/10: val MAE = 11.3743
+  fold 4/10: val MAE = 15.2798
+  fold 5/10: val MAE = 12.4383
+  fold 6/10: val MAE = 11.0518
+  fold 7/10: val MAE = 18.3206
+  fold 8/10: val MAE = 11.6448
+  fold 9/10: val MAE = 14.9627
+  fold 10/10: val MAE = 14.5904
+
+===== Model Performance =====
+Predict MAE: 14.3061
+Training MAE (in-sample): 4.0908
+OOF MAE (out-of-fold on train): 14.0771
+RMSE: 19.1748
+R²: 0.7871
+
+===== Time =====
+Training Time (10 folds): 428.5872 seconds
+Prediction Time: 0.0746 seconds
+
+===== Hyperparameters =====
+channels: (64, 128, 64)
+kernel_size: 3
+dropout: 0.3
+lr: 0.001
+batch_size: 256
+weight_decay: 0.0
+Fold val MAEs: [14.9788, 16.1484, 11.3743, 15.2798, 12.4383, 11.0518, 18.3206, 11.6448, 14.9627, 14.5904]
+Mean fold MAE: 14.0790
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 59/100 (59.00%)
+Underestimation Count: 41/100 (41.00%)
+Mean Overestimation: 15.0248
+Mean Underestimation: 13.2719
+
+3,1
+===== Final training (GroupKFold ensemble) =====
+  fold 1/10: val MAE = 14.9788
+  fold 2/10: val MAE = 16.1484
+  fold 3/10: val MAE = 11.3743
+  fold 4/10: val MAE = 15.2798
+  fold 5/10: val MAE = 12.4383
+  fold 6/10: val MAE = 11.0518
+  fold 7/10: val MAE = 18.3206
+  fold 8/10: val MAE = 11.6448
+  fold 9/10: val MAE = 14.9627
+  fold 10/10: val MAE = 14.5904
+
+===== Model Performance =====
+Predict MAE: 14.3061
+Training MAE (in-sample): 4.0908
+OOF MAE (out-of-fold on train): 14.0771
+RMSE: 19.1748
+R²: 0.7871
+
+===== Time =====
+Training Time (10 folds): 428.5872 seconds
+Prediction Time: 0.0746 seconds
+
+===== Hyperparameters =====
+channels: (64, 128, 64)
+kernel_size: 3
+dropout: 0.3
+lr: 0.001
+batch_size: 256
+weight_decay: 0.0
+Fold val MAEs: [14.9788, 16.1484, 11.3743, 15.2798, 12.4383, 11.0518, 18.3206, 11.6448, 14.9627, 14.5904]
+Mean fold MAE: 14.0790
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 59/100 (59.00%)
+Underestimation Count: 41/100 (41.00%)
+Mean Overestimation: 15.0248
+Mean Underestimation: 13.2719
+PS C:\Engine URL Prediction> py "C:\Engine URL Prediction\CNN.py"
+Using 24 features: ['operational_setting_1', 'operational_setting_2', 'operational_setting_3', 'sensor_1', 'sensor_2', 'sensor_3', 'sensor_4', 'sensor_5', 'sensor_6', 'sensor_7', 'sensor_8', 'sensor_9', 'sensor_10', 'sensor_11', 'sensor_12', 'sensor_13', 'sensor_14', 'sensor_15', 'sensor_16', 'sensor_17', 'sensor_18', 'sensor_19', 'sensor_20', 'sensor_21']
+Train windows: (17731, 30, 24) | Test engines: (100, 30, 24)
+
+===== Final training (GroupKFold ensemble) =====
+  fold 1/10: val MAE = 15.3859
+  fold 2/10: val MAE = 16.0781
+  fold 3/10: val MAE = 11.1142
+  fold 4/10: val MAE = 14.9489
+  fold 5/10: val MAE = 14.6425
+  fold 6/10: val MAE = 11.8466
+  fold 7/10: val MAE = 19.4194
+  fold 8/10: val MAE = 15.0798
+  fold 9/10: val MAE = 15.0340
+  fold 10/10: val MAE = 14.2631
+
+===== Model Performance =====
+Predict MAE: 14.6689
+Training MAE (in-sample): 4.7994
+OOF MAE (out-of-fold on train): 14.7770
+RMSE: 19.2896
+R²: 0.7845
+
+===== Time =====
+Training Time (10 folds): 530.2503 seconds
+Prediction Time: 0.0682 seconds
+
+===== Hyperparameters =====
+channels: (64, 128, 64)
+kernel_size: 3
+dropout: 0.3
+lr: 0.001
+batch_size: 256
+weight_decay: 0.0
+Fold val MAEs: [15.3859, 16.0781, 11.1142, 14.9489, 14.6425, 11.8466, 19.4194, 15.0798, 15.034, 14.2631]
+Mean fold MAE: 14.7812
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 47/100 (47.00%)
+Underestimation Count: 53/100 (53.00%)
+Mean Overestimation: 15.3331
+Mean Underestimation: 14.0800
+
+7:1
+===== Final training (GroupKFold ensemble) =====
+  fold 1/10: val MAE = 16.3874
+  fold 2/10: val MAE = 17.1740
+  fold 3/10: val MAE = 13.0991
+  fold 4/10: val MAE = 15.7807
+  fold 5/10: val MAE = 14.3160
+  fold 6/10: val MAE = 11.7735
+  fold 7/10: val MAE = 18.2526
+  fold 8/10: val MAE = 14.6362
+  fold 9/10: val MAE = 14.8517
+  fold 10/10: val MAE = 16.1951
+
+===== Model Performance =====
+Predict MAE: 14.4721
+Training MAE (in-sample): 6.6511
+OOF MAE (out-of-fold on train): 15.2453
+RMSE: 19.0920
+R²: 0.7889
+
+===== Time =====
+Training Time (10 folds): 561.5973 seconds
+Prediction Time: 0.0584 seconds
+
+===== Hyperparameters =====
+channels: (64, 128, 64)
+kernel_size: 3
+dropout: 0.3
+lr: 0.001
+batch_size: 256
+weight_decay: 0.0
+Fold val MAEs: [16.3874, 17.174, 13.0991, 15.7807, 14.316, 11.7735, 18.2526, 14.6362, 14.8517, 16.1951]
+Mean fold MAE: 15.2466
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 44/100 (44.00%)
+Underestimation Count: 56/100 (56.00%)
+Mean Overestimation: 12.5695
+Mean Underestimation: 15.9671
+PS C:\Engine URL Prediction> 
+
+2,1
+===== Final training (GroupKFold ensemble) =====
+  fold 1/10: val MAE = 15.1818
+  fold 2/10: val MAE = 16.3674
+  fold 3/10: val MAE = 14.4103
+  fold 4/10: val MAE = 15.4543
+  fold 5/10: val MAE = 12.3264
+  fold 6/10: val MAE = 11.0870
+  fold 7/10: val MAE = 20.6756
+  fold 8/10: val MAE = 13.3371
+  fold 9/10: val MAE = 15.1203
+  fold 10/10: val MAE = 16.4390
+
+===== Model Performance =====
+Predict MAE: 14.2349
+Training MAE (in-sample): 5.3539
+OOF MAE (out-of-fold on train): 15.0373
+RMSE: 18.6849
+R²: 0.7978
+
+===== Time =====
+Training Time (10 folds): 391.3428 seconds
+Prediction Time: 0.0618 seconds
+
+===== Hyperparameters =====
+channels: (64, 128, 64)
+kernel_size: 3
+dropout: 0.3
+lr: 0.001
+batch_size: 256
+weight_decay: 0.0
+Fold val MAEs: [15.1818, 16.3674, 14.4103, 15.4543, 12.3264, 11.087, 20.6756, 13.3371, 15.1203, 16.439]
+Mean fold MAE: 15.0399
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 49/100 (49.00%)
+Underestimation Count: 51/100 (51.00%)
+Mean Overestimation: 13.5598
+Mean Underestimation: 14.8835
+PS C:\Engine URL Prediction> 
+new 3:1
+
+==== Final training (GroupKFold ensemble) =====
+  fold 1/10: val MAE = 15.7056
+  fold 2/10: val MAE = 16.1290
+  fold 3/10: val MAE = 12.0729
+  fold 4/10: val MAE = 15.4722
+  fold 5/10: val MAE = 12.4119
+  fold 6/10: val MAE = 10.0764
+  fold 7/10: val MAE = 17.8745
+  fold 8/10: val MAE = 11.8936
+  fold 9/10: val MAE = 15.6724
+  fold 10/10: val MAE = 12.7450
+
+===== Model Performance =====
+Predict MAE: 14.4098
+Training MAE (in-sample): 3.6411
+OOF MAE (out-of-fold on train): 14.0043
+RMSE: 18.9261
+R²: 0.7926
+
+===== Time =====
+Training Time (10 folds): 590.1608 seconds
+Prediction Time: 0.0632 seconds
+
+===== Hyperparameters =====
+channels: (128, 64, 32)
+kernel_size: 3
+dropout: 0.1
+lr: 0.001
+batch_size: 128
+weight_decay: 0.0
+Fold val MAEs: [15.7056, 16.129, 12.0729, 15.4722, 12.4119, 10.0764, 17.8745, 11.8936, 15.6724, 12.745]
+Mean fold MAE: 14.0053
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 51/100 (51.00%)
+Underestimation Count: 49/100 (49.00%)
+Mean Overestimation: 15.8643
+Mean Underestimation: 12.8960
+
+new 1:1
+===== Final training (GroupKFold ensemble) =====
+  fold 1/10: val MAE = 15.2081
+  fold 2/10: val MAE = 16.1356
+  fold 3/10: val MAE = 11.0373
+  fold 4/10: val MAE = 15.7406
+  fold 5/10: val MAE = 12.9797
+  fold 6/10: val MAE = 10.6288
+  fold 7/10: val MAE = 16.5397
+  fold 8/10: val MAE = 12.9838
+  fold 9/10: val MAE = 14.8350
+  fold 10/10: val MAE = 14.0016
+
+===== Model Performance =====
+Predict MAE: 14.8872
+Training MAE (in-sample): 3.8788
+OOF MAE (out-of-fold on train): 14.0082
+RMSE: 19.6979
+R²: 0.7753
+
+===== Time =====
+Training Time (10 folds): 566.0462 seconds
+Prediction Time: 0.0607 seconds
+
+===== Hyperparameters =====
+channels: (128, 64, 32)
+kernel_size: 3
+dropout: 0.1
+lr: 0.001
+batch_size: 128
+weight_decay: 0.0
+Fold val MAEs: [15.2081, 16.1356, 11.0373, 15.7406, 12.9797, 10.6288, 16.5397, 12.9838, 14.835, 14.0016]
+Mean fold MAE: 14.0090
+
+===== Overestimation and Underestimation Analysis =====
+Overestimation Count: 56/100 (56.00%)
+Underestimation Count: 44/100 (44.00%)
+Mean Overestimation: 15.9461
+Mean Underestimation: 13.5394
